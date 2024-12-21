@@ -1,0 +1,135 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  scrollbar-color: white #a8d5ba;
+}
+
+.footer,
+.navbar {
+  background-color: #a8d5ba;
+}
+
+.uploadFile {
+  cursor: pointer;
+}
+
+.btn {
+  transition: background-color 0.3s, scale 0.3s;
+
+  &:active {
+    scale: 0.9;
+  }
+}
+
+.card {
+  box-shadow: 0 1rem 5rem rgba(0, 128, 0, 0.5);
+}
+
+.separator {
+  border-bottom: 4px solid #a8d5ba;
+  width: 16rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.back_title {
+  background-color: rgb(255, 243, 205);
+  width: 100%;
+  padding: 1rem;
+}
+
+.backLogin {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/BG.jpeg");
+  background-position: center;
+  background-size: cover;
+  padding-block: 3rem;
+  height: 90.6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .formLogin {
+    width: min-content;
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    background-color: #83bc95;
+
+    img {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+#modal {
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top center;
+  border: none;
+  box-shadow: 0 4px 6px;
+
+  /*  prettier-ignore */
+  transition: 
+  opacity 0.5s ease-out, 
+  transform 0.5s ease-out;
+
+  &[open] {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+.backgroundContact{
+  background-image: url("/assets/gazpacho.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 3rem;
+  height: 90.6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+}
+
+.sectionQuestion{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/gazpachocafe.jpg");
+  background-color: #f6c13e;
+  background-position: left;
+  padding-block: 3rem;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .img-fluid{
+    border-bottom-right-radius: 20rem;
+  }
+
+  .text{
+    display: absolute;
+    width: 50rem;
+    height: auto;
+    background-color: rgb(255, 253, 213);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 25% 0%;
+    h3{
+      margin: 1.8rem;
+    }
+    p{
+      margin: 1rem
+    }
+  }
+}
+
+

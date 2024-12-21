@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PetSnap</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/9d580e000e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header><%- include('modules/navbar.ejs') %></header>
+    <main>
+      <section class="backgroundContact">
+      </section>
+      <section class="section-2 py-5 overflow-x-hidden">
+        <div class="container-xxl">
+          <div class="row row-gap-5 gx-5">
+            <div class="col-12 col-md-6 col-xl-6 d-flex flex-column justify-content-center">
+              <article>
+                <div class="col-md-6 mx-5">
+                  <h3 class="mb-4 fw-bold text-center">¿PROBLEMAS?</h3>
+                  <p><strong>Teléfono:</strong> 623000071</p>
+                  <p><strong>Email:</strong> hello@socratech.es</p>
+                  <p><strong>Dirección:</strong> C. Alejandro Dumas, 17, Entresuelo, Carretera de Cádiz, 29004 Málaga</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-6">
+              <article>
+                <form action="/contact" method="post" class="contact-form col-md-6">
+                  <div class="mb-3">
+                    <label for="name" class="form-label fw-bold">Nombre</label>
+                    <input type="text" class="form-control border border-success" id="name" aria-describedby="name" name="Nombre">
+        
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label fw-bold">Correo Electrónico</label>
+                    <input type="email" class="form-control border border-success" id="email" aria-describedby="email" name="Email">
+        
+                  </div>
+                  <div class="mb-3">
+                    <label for="subject" class="form-label fw-bold">Asunto</label>
+                    <input type="text" class="form-control border border-success" id="subject" aria-describedby="subject" name="Asunto">
+        
+                  </div>
+                  <div class="mb-3">
+                    <label for="description" class="form-label fw-bold">Descripción</label>
+                    <input type="text" class="form-control border border-success" id="description" name="Description">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="check">
+                    <label class="form-check-label " for="check">Acepto los términos</label>
+                  </div>
+                  <button type="submit" class="btn btn-outline-success">Enviar</button>
+                </form>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sectionQuestion">   
+        <div class="text border border-bg-light">     
+           <h3>¿Algún problema o inquietud? ¡Estamos para ayudarte!</h3>
+          <p>
+            Sabemos que las dudas pueden surgir en cualquier momento, y queremos que tu experiencia en nuestra red social sea siempre la mejor. Si tienes algún problema técnico, inquietud sobre tu cuenta, o simplemente una sugerencia para mejorar, no dudes en contactarnos.
+          </p>
+          <p>
+            Nuestro equipo está disponible para resolver cualquier inconveniente que tengas, ya sea con la creación de perfiles, la carga de fotos o la interacción con otros usuarios. También estamos atentos a escuchar tus ideas para hacer de esta comunidad un lugar aún más peludo y divertido.
+          </p>
+          <p>
+            Puedes escribirnos a través de nuestro formulario de contacto, enviarnos un correo a hello@socratech.es, o contactarnos por nuestras redes sociales. ¡Estamos aquí para ti!
+          </p>
+        </div>
+      </section>
+
+
+
+    </main>
+    <%- include('modules/footer.ejs') %>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
